@@ -35,8 +35,6 @@ services:
     volumes:
       - /var/www/html/images:/var/www/html/images
 
-
-
   mongo-prod:
     image: mongo:4.4.6-bionic
     environment:
