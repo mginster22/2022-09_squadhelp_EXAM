@@ -31,7 +31,7 @@ const Header = () => {
                     </clipPath>
                   </defs>
                 </svg>
-                <p>Account</p>
+                <span>Account</span>
               </a>
               <ul className={styles.sub_nav_list}>
                 <a className={styles.sub_nav_list_item} href="/">

@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
+  padding: 0 10px;
   margin: auto;
   height: 100px;
   .search_wrapper {
@@ -15,7 +16,7 @@
     width: 100%;
     display: flex;
     position: relative;
-
+    margin: 0 10px;
     .search {
       width: 100%;
       padding: 12px 35px 12px 14px;
@@ -141,5 +142,21 @@
     font-size: 14px;
     line-height: 20px;
     font-style: italic;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .header_wrapper {
+    padding: 0 20px;
+    .search_wrapper {
+      max-width: 600px;
+    }
+    .button_start {
+      display: none;
+    }
+  }
+  .item_link {
+    span {
+      display: none;
+    }
   }
 }
