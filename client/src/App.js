@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import { ToastContainer } from "react-toastify";
 import LoginPage from "./pages/LoginPage/LoginPage";
@@ -18,6 +18,7 @@ import ContestCreationPage from "./pages/ContestCreation/ContestCreationPage";
 import CONSTANTS from "./constants";
 import browserHistory from "./browserHistory";
 import ChatContainer from "./components/Chat/ChatComponents/ChatContainer/ChatContainer";
+import HowItWorks from "./pages/HowItWorks";
 
 class App extends Component {
   render() {
@@ -41,6 +42,7 @@ class App extends Component {
             path="/login"
             component={OnlyNotAuthorizedUserHoc(LoginPage)}
           />
+          <Route exact path="/howItWorks" component={HowItWorks} />
           <Route
             exact
             path="/registration"
