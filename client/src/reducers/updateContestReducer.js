@@ -1,4 +1,4 @@
-import ACTION from '../actions/actionTypes';
+import ACTION from "../actions/actionTypes";
 
 const initialState = {
   isFetching: true,
@@ -6,6 +6,7 @@ const initialState = {
   data: null,
 };
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default function (state = initialState, action) {
   switch (action.type) {
     case ACTION.UPDATE_CONTEST_REQUEST: {

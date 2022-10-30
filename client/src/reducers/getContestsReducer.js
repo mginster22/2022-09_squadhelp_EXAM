@@ -1,5 +1,5 @@
-import ACTION from '../actions/actionTypes';
-import CONSTANTS from '../constants';
+import ACTION from "../actions/actionTypes";
+import CONSTANTS from "../constants";
 
 const initialState = {
   isFetching: true,
@@ -8,14 +8,15 @@ const initialState = {
   customerFilter: CONSTANTS.CONTEST_STATUS_ACTIVE,
   creatorFilter: {
     typeIndex: 1,
-    contestId: '',
-    industry: '',
-    awardSort: 'asc',
+    contestId: "",
+    industry: "",
+    awardSort: "asc",
     ownEntries: false,
   },
   haveMore: true,
 };
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default function (state = initialState, action) {
   switch (action.type) {
     case ACTION.GET_CONTESTS_ACTION_REQUEST: {

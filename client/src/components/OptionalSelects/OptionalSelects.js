@@ -1,14 +1,15 @@
-import React from 'react';
-import CONSTANTS from '../../constants';
-import SelectInput from '../SelectInput/SelectInput';
-import FormInput from '../FormInput/FormInput';
-import styles from '../ContestForm/ContestForm.module.sass';
-import Spinner from '../Spinner/Spinner';
+import React from "react";
+import CONSTANTS from "../../constants";
+import SelectInput from "../SelectInput/SelectInput";
+import FormInput from "../FormInput/FormInput";
+import styles from "../ContestForm/ContestForm.module.sass";
+import Spinner from "../Spinner/Spinner";
 
 const OptionalSelects = (props) => {
   if (props.isFetching) {
     return <Spinner />;
   }
+  // eslint-disable-next-line default-case
   switch (props.contestType) {
     case CONSTANTS.NAME_CONTEST: {
       return (
