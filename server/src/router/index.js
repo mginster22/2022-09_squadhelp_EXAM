@@ -54,7 +54,7 @@ router.post(
   contestController.getContests
 );
 
-router.get("/getUser", checkToken.checkAuth);
+router.post("/getUser", checkToken.checkAuth);
 
 router.get(
   "/downloadFile/:fileName",
