@@ -1,0 +1,11 @@
+POST http://localhost:5000/registration HTTP/1.1
+Content-Type: application/json
+
+  {
+    "firstName":"test",
+    "lastName":"test",
+    "displayName":"test",
+    "password":"test2322",
+    "email":"test@gmail.com",
+    "role":"customer"
+  }
